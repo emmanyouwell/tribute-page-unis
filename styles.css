@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dongle&family=Noto+Sans+KR:wght@500&family=Quicksand&family=Source+Sans+Pro:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#ffc8dd;
+}
+
+/* Header and Description */
+header{
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    border-bottom: 4px solid #ff5d8f;
+}
+header h1 {
+    font-size: 3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    /* color: white;
+    text-shadow: 2px 2px 5px rgba(133, 4, 56, 0.5); */
+}
+
+header p {
+    font-size: 1.2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    /* color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(133, 4, 56, 0.5); */
+}
+
+/* Tribute image */
+.tribute-photo {
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    margin: 20px 0;
+    gap:20px;
+    
+}
+#img-div {
+    text-align: center;
+    width: 500px;
+}
+#img-div a img {
+    margin: 20px auto;
+}
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+figure a img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+figure a img:hover {
+    transform: translateY(-10px);
+}
+figure figcaption {
+    font-size: 1.2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+
+/* Tribute info */
+section {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.info-header{
+    border-bottom: 2px groove #ff5d8f;
+    margin: 50px auto;
+    padding-bottom: 30px;
+}
+.info-header h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    
+    
+}
+.info-header p {
+    font-size: 1.2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+
+
+article ul li strong {
+    font-size: 2.2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+article ul {
+    padding: 10px 40px;
+    margin: 10px 0;
+    background-color: #ff5d8f;
+    color: white;
+    border-radius: 5px;
+    list-style: none;
+    text-align: center;
+
+}
+#image {
+    max-width: 100%;
+}
+img {
+    display: block;
+}
+article ul li:not(ol li) {
+    margin: 10px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed white;
+    
+}
+
+article ul ul li:not(ol li):hover {
+    background-color: white;
+    color: #ff5d8f;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(133, 4, 56, 0.5);
+    border-bottom: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+ul ul ol {
+    width: 60%;
+    margin: 0 auto;
+    padding:0;
+    text-align: left;
+    list-style-position:inside;
+    font-weight: bold;
+}
+
+ul ul ol li {
+    margin: 5px 0;
+}
+
+.history {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+
+.header-border {
+    border-bottom: 3px solid white;
+    
+}
+
+.no-border {
+    border: none;
+}
+
+/* Members */
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.members img {
+    width: 300px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    width: 100%;
+    
+}
+.img-container {
+    position: relative;    
+}
+.img-overlay-1{
+	position: absolute;
+	top:0px;
+	
+	width: 300px;
+	height: 450px;
+    padding: 10px;
+	background: url("https://res.cloudinary.com/dtrr0ihcb/image/upload/v1724322151/UNIS/CURIOUS/Hyeonju_n4dyvb.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+	background-size: 400px;
+    background-position: center;
+	color: white;
+	font-family:  'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+	border-radius: 10px;
+	
+}
+
+.img-overlay-1 > *{
+	transform: translateY(25px);
+	transition: transform 0.25s;
+}
+
+.img-overlay-1:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.img-overlay-1:hover > *{
+	transform: translateY(0);
+}
+
+.img-title-1{
+	font-size: 1.25em;
+	font-weight: bold;
+	text-shadow: 4px 4px 4px #000;
+}
+
+.img-desc-1{
+	font-size: 0.8em;
+    text-align:center;
+	margin-top: 0.25em;
+	text-shadow: 4px 4px 4px #000;
+}
+
+.img-overlay-2{
+	position: absolute;
+	top:0;
+	
+	width: 300px;
+	height: 450px;
+    padding: 10px;
+	background: url("https://res.cloudinary.com/dtrr0ihcb/image/upload/v1724323198/UNIS/CURIOUS/Nana_2_ueu7bx.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+	background-size: 400px;
+    background-position: center;
+	color: white;
+	font-family:  'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+	border-radius: 10px;
+	
+}
+
+
+.img-overlay-2 > *{
+	transform: translateY(25px);
+	transition: transform 0.25s;
+}
+
+.img-overlay-2:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.img-overlay-2:hover > *{
+	transform: translateY(0);
+}
+
+.img-title-2{
+	font-size: 1.25em;
+	font-weight: bold;
+	text-shadow: 4px 4px 4px #000;
+}
+
+.img-desc-2{
+	font-size: 0.8em;
+    text-align:center;
+	margin-top: 0.25em;
+	text-shadow: 4px 4px 4px #000;
+}
+
+.img-overlay-3{
+	position: absolute;
+	top:0;
+	
+	width: 300px;
+	height: 450px;
+    padding: 10px;
+	background: url("https://res.cloudinary.com/dtrr0ihcb/image/upload/v1724323200/UNIS/CURIOUS/Gehlee_2_ijuh9v.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+	background-size: 400px;
+    background-position:right;
+	color: white;
+	font-family:  'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+	border-radius: 10px;
+	
+}
+
+
+.img-overlay-3 > *{
+	transform: translateY(25px);
+	transition: transform 0.25s;
+}
+
+.img-overlay-3:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.img-overlay-3:hover > *{
+	transform: translateY(0);
+}
+
+.img-title-3{
+	font-size: 1.25em;
+	font-weight: bold;
+	text-shadow: 4px 4px 4px #000;
+}
+
+.img-desc-3{
+	font-size: 0.8em;
+    text-align:center;
+	margin-top: 0.25em;
+	text-shadow: 4px 4px 4px #000;
+}
+
+.img-overlay-4{
+	position: absolute;
+	top:0;
+	
+	width: 300px;
+	height: 450px;
+    padding: 10px;
+	background: url("https://res.cloudinary.com/dtrr0ihcb/image/upload/v1724323199/UNIS/CURIOUS/Kotoko_2_wsumup.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+	background-size: 400px;
+    background-position: center;
+	color: white;
+	font-family:  'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+	border-radius: 10px;
+	
+}
+
+
+.img-overlay-4 > *{
+	transform: translateY(25px);
+	transition: transform 0.25s;
+}
+
+.img-overlay-4:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.img-overlay-4:hover > *{
+	transform: translateY(0);
+}
+
+.img-title-4{
+	font-size: 1.25em;
+	font-weight: bold;
+	text-shadow: 4px 4px 4px #000;
+}
+
+.img-desc-4{
+	font-size: 0.8em;
+    text-align:center;
+	margin-top: 0.25em;
+	text-shadow: 4px 4px 4px #000;
+}
+
+.img-overlay-5{
+	position: absolute;
+	top:0;
+	
+	width: 300px;
+	height: 450px;
+    padding: 10px;
+	background: url("https://res.cloudinary.com/dtrr0ihcb/image/upload/v1724323205/UNIS/CURIOUS/Yunha_2_nrdmpv.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+	background-size: 400px;
+    background-position: center;
+	color: white;
+	font-family:  'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+	border-radius: 10px;
+	
+}
+
+
+.img-overlay-5 > *{
+	transform: translateY(25px);
+	transition: transform 0.25s;
+}
+
+.img-overlay-5:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.img-overlay-5:hover > *{
+	transform: translateY(0);
+}
+
+.img-title-5{
+	font-size: 1.25em;
+	font-weight: bold;
+	text-shadow: 4px 4px 4px #000;
+}
+
+.img-desc-5{
+	font-size: 0.8em;
+    text-align:center;
+	margin-top: 0.25em;
+	text-shadow: 4px 4px 4px #000;
+}
+
+.img-overlay-6{
+	position: absolute;
+	top:0;
+	
+	width: 300px;
+	height: 450px;
+    padding: 10px;
+	background: url("https://res.cloudinary.com/dtrr0ihcb/image/upload/v1724323197/UNIS/CURIOUS/Elisia_2_uc5kvu.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+	background-size: 400px;
+    background-position: center;
+	color: white;
+	font-family:  'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+	border-radius: 10px;
+	
+}
+
+
+.img-overlay-6 > *{
+	transform: translateY(25px);
+	transition: transform 0.25s;
+}
+
+.img-overlay-6:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.img-overlay-6:hover > *{
+	transform: translateY(0);
+}
+
+.img-title-6{
+	font-size: 1.25em;
+	font-weight: bold;
+	text-shadow: 4px 4px 4px #000;
+}
+
+.img-desc-6{
+	font-size: 0.8em;
+    text-align:center;
+	margin-top: 0.25em;
+	text-shadow: 4px 4px 4px #000;
+}
+
+.img-overlay-7{
+	position: absolute;
+	top:0;
+	
+	width: 300px;
+	height: 450px;
+    padding: 10px;
+	background: url("https://res.cloudinary.com/dtrr0ihcb/image/upload/v1724323196/UNIS/CURIOUS/Yoona_2_elsfcg.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+	background-size: 400px;
+    background-position: center;
+	color: white;
+	font-family:  'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+	border-radius: 10px;
+	
+}
+
+
+.img-overlay-7 > *{
+	transform: translateY(25px);
+	transition: transform 0.25s;
+}
+
+.img-overlay-7:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.img-overlay-7:hover > *{
+	transform: translateY(0);
+}
+
+.img-title-7{
+	font-size: 1.25em;
+	font-weight: bold;
+	text-shadow: 4px 4px 4px #000;
+}
+
+.img-desc-7{
+	font-size: 0.8em;
+    text-align:center;
+	margin-top: 0.25em;
+	text-shadow: 4px 4px 4px #000;
+}
+
+
+.img-overlay-8{
+	position: absolute;
+	top:0;
+	
+	width: 300px;
+	height: 450px;
+    padding: 10px;
+	background: url("https://res.cloudinary.com/dtrr0ihcb/image/upload/v1724323195/UNIS/CURIOUS/Seowon_2_hgxwqt.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+	background-size: 400px;
+    background-position: center;
+	color: white;
+	font-family:  'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+	border-radius: 10px;
+	
+}
+
+
+.img-overlay-8 > *{
+	transform: translateY(25px);
+	transition: transform 0.25s;
+}
+
+.img-overlay-8:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.img-overlay-8:hover > *{
+	transform: translateY(0);
+}
+
+.img-title-8{
+	font-size: 1.25em;
+	font-weight: bold;
+	text-shadow: 4px 4px 4px #000;
+}
+
+.img-desc-8{
+	font-size: 0.8em;
+    text-align:center;
+	margin-top: 0.25em;
+	text-shadow: 4px 4px 4px #000;
+}
+
+.learn-more {
+    width: 100%;
+    text-align: center;
+    margin: 50px auto;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    
+    background-color: #ff5d8f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    margin-top: 20px;
+}
